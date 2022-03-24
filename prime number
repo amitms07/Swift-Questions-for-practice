@@ -1,0 +1,19 @@
+import Foundation
+
+var num = 13
+var i = 2
+var c = 0
+while(i<13/2)
+{
+  if(num%i == 0)
+  {
+    print("Not prime")
+    c=1
+    break
+  }
+  i+=1
+}
+if(c==0)
+{
+  print("prime")
+}
