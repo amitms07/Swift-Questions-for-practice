@@ -1,0 +1,10 @@
+import Foundation
+var welcome = "Hii Amit! Have a great day"
+let range = welcome[welcome.index(welcome.startIndex, offsetBy: 0)..<welcome.index(welcome.startIndex, offsetBy: 9)]
+print(range)
+
+
+let r: Range<String.Index> = welcome.range(of: "Amit")!
+let beforeName = welcome[..<r.upperBound]
+print(beforeName)
+
