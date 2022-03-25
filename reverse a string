@@ -1,0 +1,4 @@
+import Foundation
+
+var name = "Amit"
+print(String(name.reversed()))
