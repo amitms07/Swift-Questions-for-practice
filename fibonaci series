@@ -1,0 +1,15 @@
+import Foundation
+
+var num1 = 0
+var num2 = 1
+var n = 10
+print("0,1",terminator: " ")
+while(n>2)
+{
+  print(",\(num1+num2)",terminator: " ")
+  let temp = num1
+  num1 = num2
+  num2 = num1+temp
+  n=n-1
+}
+
