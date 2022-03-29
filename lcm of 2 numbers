@@ -1,0 +1,16 @@
+import Foundation
+
+func lcm(num1:Int , num2:Int)->Int {
+  var num = 0
+  let t=num1>num2 ? num2:num1 
+  for i in 2...t {
+    if(num1%i==0 && num2%i==0)
+    {
+      num=num1
+    }
+}
+num = num1*num2/num
+  return num
+}
+
+print(lcm(num1: 10, num2: 40))
