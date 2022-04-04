@@ -1,0 +1,47 @@
+import Foundation
+
+var nums = [0,1,2,3,4,5]
+//reverse array
+nums.reverse()
+ print(nums)
+//append a number
+ nums.append(4)
+  print(nums)
+
+// append another array
+var arr=[7,8,9]
+nums.append(contentsOf: arr)
+print(nums)
+
+// Drop first n elements
+
+print(nums.dropFirst(3))
+
+print(nums.dropLast(3))
+
+print(nums.dropFirst())
+
+print(nums.dropLast())
+// append an array at a perticular position
+nums.insert(contentsOf:arr,at:2)
+print(nums)
+
+// sorting an array
+
+nums.sort()
+print(nums)
+
+// sorting an array in descending order 
+
+nums.sort(by:>)
+print(nums)
+
+// string array operation
+
+var names=["Amit" , "Babu","Pooja","Ayush","Chinki ji"]
+names.sort(by:>)
+print(names)
+
+//filter array
+let result = nums.filter{ $0 > 5}
+print(result)

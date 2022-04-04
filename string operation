@@ -1,0 +1,46 @@
+import Foundation
+
+func stringOperation(str1:String , str2:String) {
+  var str = str1
+  var string2 = str2
+ // append a string
+  str.append(" Kumar ")
+  print(str)
+  // insert any charecter
+  string2.insert(contentsOf: "t", at: string2.endIndex)
+  print(string2)
+// remove string by index
+  var s = String(str.remove(at: str.index(str.startIndex, offsetBy: 2)))
+  print(s+str)
+
+  // split string by special charecter
+
+  var name = "Amit Kumar Sahu"
+  let fullname = name.components(separatedBy: " ")
+  print(fullname[0])
+  print(fullname[1])
+  print(fullname[2])
+  
+  
+ //split string operations 
+var namee = "rashmi rekha"
+let name2 = namee.split(separator: " ", maxSplits: 1)
+print(name2[0])
+
+let line = "hi:   i am learning swift"
+print(line.split(separator:  " "))
+print(line.split(separator: " ", maxSplits: 3))
+print(line.split(separator: " ", omittingEmptySubsequences: false))
+
+
+  
+
+}
+stringOperation(str1:"Amit" , str2:"ami")
+
+/* let string1 = "hello"
+let string2 = " there"
+var welcome = string1 + string2
+let exclamationMark: Character = "!"
+print(welcome.append("c"))
+print(welcome) */

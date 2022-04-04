@@ -1,0 +1,21 @@
+import Foundation
+
+var string = "amit@07"
+var countchar = 0
+var countNum = 0
+var countSpl = 0
+for char in string {
+  if((char>="a" && char <= "z") || (char >= "A" && char <= "Z"))
+  {
+    countchar+=1;
+  }
+  else if (char >= "0" && char <= "9")
+  {
+      countNum+=1
+  }
+  else {
+    countSpl+=1
+  }
+}
+
+print("no of alphabet is \(countchar) and no of numeric digit is \(countNum) and no of spl char is \(countSpl) ")
