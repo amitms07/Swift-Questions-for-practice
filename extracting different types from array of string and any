@@ -1,0 +1,15 @@
+import Foundation
+
+let words = ["53", "nine", "hello","0"]
+
+let string : [Any] = [1,"hii", "Amit",2 ,3,"4"]
+let val = string.compactMap { $0 as? Int }
+print(val)
+let val2 = string.compactMap{$0 as? String}
+print(val2)
+let val3 = val2.compactMap{Int($0)}
+let val4=val+val3
+print(val4)
+
+let values = words.compactMap { Int($0) }
+print(values)
