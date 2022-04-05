@@ -20,11 +20,20 @@ func stringOperation(str1:String , str2:String) {
   print(fullname[0])
   print(fullname[1])
   print(fullname[2])
+  
+  
+ //split string operations 
+var namee = "rashmi rekha"
+let name2 = namee.split(separator: " ", maxSplits: 1)
+print(name2[0])
+
+let line = "hi:   i am learning swift"
+print(line.split(separator:  " "))
+print(line.split(separator: " ", maxSplits: 3))
+print(line.split(separator: " ", omittingEmptySubsequences: false))
 
 
   
-
-
 
 }
 stringOperation(str1:"Amit" , str2:"ami")
