@@ -1,0 +1,15 @@
+import Foundation
+
+var arr = [20,50,10,45,85,60,15,3,8]
+
+for i in  0...arr.count-2{
+  for j in i+1...arr.count-1 {
+    if(arr[i]>arr[j]){
+      let val = arr[i]
+      arr[i] = arr[j]
+      arr[j] = val
+    }
+  }
+}
+
+print(arr)
